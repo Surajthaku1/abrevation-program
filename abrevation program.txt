@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp77
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = "vijay kumar sharma";
+            string[] strarr = str.Split( );
+            StringBuilder sb = new StringBuilder();
+            for(int i = 0; i < strarr.Length-1; i++)
+            {
+                sb.Append(strarr[i].Substring(0,1).ToUpper());
+                sb.Append(". ");
+            }
+            sb.Append(strarr[strarr.Length-1]);
+            Console.WriteLine(sb);
+            Console.ReadLine();
+        }
+    }
+}
